@@ -1,15 +1,21 @@
-# 🛡️ Web Security Report
+# 🧩 Cross-Site Scripting (XSS)
 
-**Author:** Zain Shabaan  
-**Date:**  7 September 2025  
-**Topic:** Cross-Site Scripting (XSS)  
-**Purpose:** To document and explain the XSS vulnerability, how it works, and how to prevent it.  
+**Category:** Client-Side Attack  
+**Risk Level:** High  
 
 ---
 
 ## 📖 Description
-Cross-Site Scripting (XSS) is a web security vulnerability that allows attackers to inject malicious Javascript into web
-pages viewed by other users, it expolits the trust between a users browser and a legitimiate website
+Cross-Site Scripting (XSS) is a web vulnerability that allows attackers to inject **malicious JavaScript code** into web pages viewed by other users.  
+This happens when applications fail to sanitize or escape user input before displaying it, causing the victim’s browser to execute the script as if it came from a trusted source.
+
+---
+
+## ⚙️ How It Works
+Example vulnerable web page:
+```html
+<p>Welcome, <?php echo $_GET["name"]; ?></p>
+
 
 Cross-Site Scripting (XSS)
 
