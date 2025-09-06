@@ -1,10 +1,10 @@
 Cross-Site Scripting (XSS)
 
-1.Definition - Cross-Site Scripting (XSS) is a web security that allows an attacker to inject malicious scripts, usually Javascript
+1. Definition - Cross-Site Scripting (XSS) is a web security that allows an attacker to inject malicious scripts, usually Javascript
 into web pages viewed by other users. When the vulnerable application fails to properly validate or escape user input,
 the malicious script runs in the victims browser as it came from the trusted website.
 
-2.How XSS Works
+2. How XSS Works
 - Web applications often accept input (like comments, search terms, form data) and display it back to other users.
 
  -If input is not sanitized, an attacker can inject JavaScript code instead of plain text.
@@ -16,7 +16,7 @@ the malicious script runs in the victims browser as it came from the trusted web
 When displayed on the page, the victim sees a popup alert. In real attacks, the script could steal cookies, log keystrokes,
 or direct users 
 
-3.Types of XSS
+3. Types of XSS
 a) Stored (Persistent) XSS
 
 Malicious script is permanently stored on the target server (e.g., in a database).
