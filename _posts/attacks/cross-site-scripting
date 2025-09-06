@@ -1,3 +1,16 @@
+# 🛡️ Web Security Report
+
+**Author:** Zain Shabaan  
+**Date:**  7 September 2025  
+**Topic:** Cross-Site Scripting (XSS)  
+**Purpose:** To document and explain the XSS vulnerability, how it works, and how to prevent it.  
+
+---
+
+## 📖 Description
+Cross-Site Scripting (XSS) is a web security vulnerability that allows attackers to inject malicious Javascript into web
+pages viewed by other users, it expolits the trust between a users browser and a legitimiate website
+
 Cross-Site Scripting (XSS)
 
 1. Definition - Cross-Site Scripting (XSS) is a web security that allows an attacker to inject malicious scripts, usually Javascript
