@@ -1,8 +1,20 @@
+# 🧩 SQL Injection (SQLi)
+
+**Category:** Injection Attack  
+**Risk Level:** Critical  
+
 ---
-layout: post
-title: "Understanding SQL Injection (Beginner Guide)"
-date: 2025-09-03
+
+## 📖 Description
+SQL Injection is a web vulnerability that allows attackers to manipulate backend SQL queries by injecting malicious SQL code into user inputs.  
+This can lead to **data theft, authentication bypass, and database compromise**.
+
 ---
+
+## ⚙️ How It Works
+Example vulnerable query:
+```sql
+SELECT * FROM users WHERE username = 'input' AND password = 'input';
 
 What is SQL Injection (SQLI)
 
