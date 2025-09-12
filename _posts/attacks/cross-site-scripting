@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Cross-Site Scripting"
+date: 2025-09-12
+categories: attacks
+---
+
 # 🧩 Cross-Site Scripting (XSS)
 
 **Category:** Client-Side Attack  
