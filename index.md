@@ -1,123 +1,325 @@
 ---
 layout: default
+title: "Home"
 ---
 
-Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
+# 👋 Hi, I'm Zain Shabaan
 
-[Link to another page](./another-page.html).
+**Aspiring Cybersecurity Professional** focused on:
 
-There should be whitespace between paragraphs.
+- Python security tools (encryption, phishing detection, network scanning)
+- Building realistic home labs (Windows, Kali, Splunk, T-Pot, SIEM)
+- Security awareness training (GoPhish simulations, posters, interactive games)
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+I learn by **doing** – building tools, running experiments in isolated labs, and then turning them into clear stories that non-technical people can understand.
 
-# Header 1
+---
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+## 🔍 Quick Overview
 
-## Header 2
+- [Secure Password Manager (Python)](#secure-password-manager-python)
+- [Phishing Email Detector (Python)](#phishing-email-detector-python)
+- [Network Scanner (Python)](#network-scanner-python)
+- [Cybersecurity Home Lab](#cybersecurity-home-lab)
+- [DFIR & SIEM Lab with Splunk](#dfir--siem-lab-with-splunk)
+- [T-Pot Honeypot on DigitalOcean](#t-pot-honeypot-on-digitalocean)
+- [GoPhish Phishing Simulation](#gophish-phishing-simulation)
+- [Complete Phishing Awareness System](#complete-phishing-awareness-system)
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+---
 
-### Header 3
+## 🧰 Technical Skills
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+**Security & Platforms**
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+- Windows 10 endpoint hardening & logging (Defender, Sysmon)
+- Kali Linux • VirtualBox • DigitalOcean droplets
+- DFIR mindset, log analysis, basic threat hunting
+- Honeypots (T-Pot, Cowrie, Dionaea) & attack surface monitoring
 
-#### Header 4
+**Tools & Technologies**
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+- Python (CLI tools, automation, CSV/JSON processing)
+- Splunk (searching, dashboards, endpoint index)
+- ELK Stack basics (Elasticsearch, Logstash, Kibana via T-Pot)
+- GoPhish for phishing simulations
+- Networking basics (IP ranges, host-only networks, ports, services)
 
-##### Header 5
+**Soft Skills**
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+- Clear written communication (LinkedIn write-ups, training content)
+- Security awareness & education
+- Experiment design, documentation, and reflection
 
-###### Header 6
+---
 
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
+## 🛡️ PROJECTS – Security Tools
 
-### There's a horizontal rule below this.
+### Secure Password Manager (Python)
 
-* * *
+![Password Manager – master password flow](assets/images/project1-password-manager-terminal.png)
+![Password Manager – Python code in VS Code](assets/images/project1-password-manager-code.png)
 
-### Here is an unordered list:
+**Goal:** Build a real-world style **password manager** to practice secure authentication and encryption.
 
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
+**What it does**
 
-### And an ordered list:
+- Prompts the user to create a **master password**, stored only as a **salted, hashed value**.
+- Uses **PBKDF2 (hashlib)** to derive a key and **Fernet (AES)** to encrypt stored passwords.
+- Provides a simple **CLI menu**: add new passwords, view stored passwords (after correct master password).
 
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
+**Key security concepts practiced**
 
-### And a nested list:
+- Master password authentication (salted + hashed)
+- AES encryption for password storage
+- Separating authentication, encryption, and storage concerns
 
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
+**Tech stack**
 
-### Small image
+> Python • `cryptography` (Fernet) • `hashlib` PBKDF2 • CLI design
 
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
+---
 
-### Large image
+### Phishing Email Detector (Python)
 
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
+![Phishing detector – CLI report](assets/images/project2-phishing-detector-terminal.png)
+![Phishing detector – JSON report](assets/images/project2-phishing-detector-json.png)
+![Phishing detector – CSV summary](assets/images/project2-phishing-detector-csv.png)
 
+**Goal:** Automatically analyse `.eml` files for phishing indicators and generate structured reports.
 
-### Definition lists can be used with HTML syntax.
+**What it does**
 
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
+- Parses email headers and body content from `.eml` files.
+- Checks for:
+  - SPF/DKIM presence
+  - Domain mismatches
+  - Suspicious URLs & urgency phrases
+  - Punycode/IP indicators
+- Outputs both:
+  - **JSON report** (per email)
+  - **CSV report** summarising all scanned emails (timestamp, decision, flags, etc.)
 
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
+**Why it matters**
 
-```
-The final element.
-```
+This project simulates SOC-style triage: turning raw email data into **structured evidence** a defender could act on.
+
+**Tech stack**
+
+> Python • JSON & CSV reporting • email/header parsing • basic rule-based detection
+
+---
+
+### Network Scanner (Python)
+
+![Network scanner – port scan function](assets/images/project3-network-scanner-code.png)
+![Network scanner – CLI usage](assets/images/project3-network-scanner-terminal.png)
+![Network scanner – CSV results](assets/images/project3-network-scanner-csv.png)
+
+**Goal:** Build a fast, scriptable **network scanner** to discover open ports and services.
+
+**What it does**
+
+- Scans hosts and ports with **multithreading** for speed.
+- Supports **CIDR notation & IP ranges** for flexible targeting.
+- Identifies services like **SSH, HTTP, HTTPS** based on port.
+- Writes results to **CSV** with: timestamp, host, port, service, open/closed, elapsed time.
+
+**Key features**
+
+- Threaded performance to handle many checks quickly.
+- Custom timeout control to avoid long hangs.
+- CSV logs suitable for later analysis or import into other tools.
+
+**Tech stack**
+
+> Python • `socket` • multithreading • CSV logging
+
+---
+
+## 🧪 PROJECTS – Labs & Environments
+
+### Cybersecurity Home Lab
+
+![VirtualBox lab – Windows + Kali VMs](assets/images/project4-homelab-vbox.png)
+![VirtualBox host-only network config](assets/images/project4-homelab-network.png)
+![Kali – IP config and ping tests](assets/images/project4-homelab-kali-ping.png)
+
+**Goal:** Build a **safe, isolated environment** to run security experiments without risking real systems.
+
+**What I built**
+
+- VirtualBox home lab with:
+  - **Windows 10 VM** (victim / endpoint)
+  - **Kali Linux VM** (attacker)
+- Configured a **Host-only network** so VMs can talk to each other but stay isolated from the internet.
+- Assigned IP addresses and verified connectivity with **ICMP ping tests** between machines.
+
+**Why it matters**
+
+This lab is the base for many other projects: phishing simulations, network scans, malware testing, and DFIR exercises.
+
+**Key tools**
+
+> VirtualBox • Windows 10 • Kali Linux • Host-only networking
+
+---
+
+### DFIR & SIEM Lab with Splunk
+
+![Kali attacker – host-only network view](assets/images/project5-dfir-kali.png)
+![VirtualBox manager – DFIR lab VMs](assets/images/project5-dfir-vbox.png)
+![Kali – Python HTTP server delivering payload](assets/images/project5-dfir-http-server.png)
+![Windows Defender – real-time protection settings](assets/images/project5-dfir-defender.png)
+![Kali – Nmap scan of Windows endpoint](assets/images/project5-dfir-nmap.png)
+![Splunk – endpoint index search](assets/images/project5-dfir-splunk-endpoint.png)
+![Splunk – event timeline view](assets/images/project5-dfir-splunk-timeline.png)
+
+**Goal:** Build a **Digital Forensics & Incident Response** environment to understand how attacks are logged and detected.
+
+**Lab components**
+
+- VirtualBox environment with:
+  - Windows 10 endpoint
+  - Kali Linux attacker
+  - Splunk SIEM instance
+- Simulated payload delivery using a **Python HTTP server** hosting a fake `Resume.pdf.exe`.
+- Generated activity on the Windows host (downloads, executions, network connections).
+
+**What I practised**
+
+- Secure virtualisation and host-only networking.
+- Internal connectivity checks with **ICMP** and **Nmap**.
+- Event logging & alert generation in **Windows Defender / Sysmon**.
+- Log ingestion & analysis inside **Splunk**:
+  - Searching by IP, time range, event IDs.
+  - Correlating attacker IP activity to timeline events.
+
+**Key tools**
+
+> VirtualBox • Kali Linux • Windows 10 • Splunk • Sysmon • Nmap • Python HTTP server
+
+---
+
+### T-Pot Honeypot on DigitalOcean
+
+![DigitalOcean droplet – T-Pot honeypot server](assets/images/project6-tpot-droplet.png)
+![T-Pot installation script running](assets/images/project6-tpot-install.png)
+![T-Pot – containers and services pulled](assets/images/project6-tpot-pulled.png)
+![T-Pot web console – main dashboard](assets/images/project6-tpot-dashboard.png)
+![T-Pot attack map – live global hits](assets/images/project6-tpot-attackmap.png)
+
+**Goal:** Deploy a **cloud honeypot environment** and observe real attacker behaviour in the wild.
+
+**What I built**
+
+- Provisioned an **Ubuntu server droplet** on DigitalOcean.
+- Installed the full **T-Pot honeypot platform**, including multiple honeypots (Cowrie, Dionaea, etc.) and the ELK stack.
+- Reconfigured SSH and firewall rules as required by T-Pot.
+- Accessed the **T-Pot web interface**, including:
+  - Central dashboard
+  - Attack Map with geolocation of sources
+  - Tools like Kibana, CyberChef, Spiderfoot
+
+**What I analysed**
+
+- Live global attacks against the honeypot (login attempts, scans, exploitation traffic).
+- Top source IPs, countries, ports, and services hit.
+- Patterns in automated scanning and brute-force behaviour.
+
+**Skills developed**
+
+- Honeypot deployment & configuration
+- Threat intelligence collection & basic analysis
+- Cloud server management (billing, isolation, firewalling)
+- Data visualisation and reporting with Kibana & dashboards
+
+**Tech stack**
+
+> DigitalOcean • Ubuntu Server • T-Pot • ELK Stack • Various honeypots
+
+---
+
+## 🧠 PROJECTS – Phishing & Awareness
+
+### GoPhish Phishing Simulation
+
+![GoPhish – spear-phishing email template](assets/images/project7-gophish-template.png)
+![GoPhish – campaign results dashboard](assets/images/project7-gophish-results.png)
+
+**Goal:** Understand how organisations run **phishing awareness campaigns** from the attacker and defender perspective.
+
+**What I did**
+
+- Deployed **GoPhish** inside my lab environment.
+- Created a spear-phishing email template for a hospital IT verification scenario.
+- Designed a matching **landing page** to capture test credentials.
+- Configured sending profiles, user groups, and launched a test campaign.
+- Reviewed the **campaign dashboard** (emails sent/opened, links clicked, data submitted, emails reported).
+
+**What I learned**
+
+- How attackers craft believable, high-pressure lures.
+- How campaign metrics help security teams measure user behaviour.
+- How GoPhish structures data for export and analysis.
+
+**Tech stack**
+
+> GoPhish • Kali Linux • HTML templates • Lab-only email simulation
+
+---
+
+### Complete Phishing Awareness System
+
+![Interactive game – scenario choice screen](assets/images/project8-game-scenario.png)
+![Interactive game – correct (unsafe) explanation](assets/images/project8-game-correct.png)
+![Interactive game – incorrect explanation slide](assets/images/project8-game-incorrect.png)
+![Pause and Verify – phishing awareness poster](assets/images/project8-poster.png)
+
+**Goal:** Turn technical phishing experiments into a **holistic training experience** for non-technical staff.
+
+This system combines three elements:
+
+1. **Visual Awareness Poster**  
+   - “**Pause and Verify**” design encouraging staff to stop and think before clicking email links.  
+   - Simple, memorable messaging: *verify emails before clicking links*.
+
+2. **Interactive Learning Game**  
+   - Scenario: link to a hospital login page sent to a personal Gmail account.  
+   - Users choose **SAFE** or **UNSAFE**, then receive instant feedback explaining:
+     - How attackers impersonate hospital IT.
+     - Why personal accounts are high-risk.
+     - Why official portals and approved apps should always be used.
+
+3. **GoPhish Simulation (from the previous project)**  
+   - Connects the theory to realistic-looking phishing attempts.
+   - Shows how user actions (clicks, submissions, reports) become data.
+
+**Outcome**
+
+By combining **simulation + design + education**, this project mirrors how real organisations train staff to recognise modern social-engineering attacks.
+
+**Tech & tools**
+
+> GoPhish • Presentation tools (interactive slides) • Poster design tools
+
+---
+
+## 📚 How I Work & Learn
+
+- I design labs that are **safe, isolated, and repeatable**.
+- I write detailed LinkedIn posts to explain:
+  - What I built
+  - Why it matters
+  - What I learned / would improve next time
+- I’m actively growing towards roles like **SOC Analyst**, **Blue Team**, or **Junior Security Engineer**.
+
+---
+
+## 📫 Contact
+
+- **GitHub:** [@zains786](https://github.com/zain786-cybersecurity/Projects) <!-- change if needed -->
+- **LinkedIn:** *(http://www.linkedin.com/in/zains786)*  
+- **Email:** *(zainshabaan@outlook.com)*
+
+If you’d like to talk about junior cybersecurity roles, projects, or collaborations, I’m always happy to connect.
