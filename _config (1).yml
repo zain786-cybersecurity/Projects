@@ -1,5 +1,6 @@
-title: Hacker theme
-description: Hacker is a theme for GitHub Pages.
-show_downloads: true
-google_analytics:
+title: "Zain Shabaan"
+description: "Aspiring developer & copywriter – Java, web, and UX-focused projects."
 theme: jekyll-theme-hacker
+
+# Optional but nice:
+github_username: your-github-username
