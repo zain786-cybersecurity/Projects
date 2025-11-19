@@ -1,0 +1,93 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* ===========================
+   CYBERSECURITY COLOUR THEME
+   =========================== */
+
+/* Overall background & body text */
+body {
+  background-color: #020617;      /* very dark blue/black */
+  color: #e5e7eb;                 /* soft light grey */
+}
+
+/* Main content area (Hacker theme uses .wrapper) */
+.wrapper {
+  background-color: #020617;
+}
+
+/* Headings – neon cyan / green vibe */
+h1, h2, h3, h4 {
+  color: #22d3ee;                 /* bright cyan */
+  text-shadow: 0 0 8px rgba(34, 211, 238, 0.4);
+}
+
+/* Links – neon green */
+a {
+  color: #4ade80;                 /* neon green */
+}
+
+a:hover {
+  color: #bbf7d0;
+  text-shadow: 0 0 6px rgba(74, 222, 128, 0.7);
+}
+
+/* Code blocks / inline code – terminal style */
+code, pre {
+  background-color: #020617 !important;
+  color: #22c55e !important;      /* terminal green */
+  border-radius: 4px;
+}
+
+/* Images – give them “screen frame” and glow */
+img {
+  border-radius: 6px;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  box-shadow: 0 0 18px rgba(15, 23, 42, 0.8);
+  margin: 0.4rem 0 1rem;
+  max-width: 100%;
+}
+
+/* Project sections – card-like blocks */
+h3 {
+  margin-top: 2.2rem;
+  border-left: 3px solid #22d3ee;
+  padding-left: 0.5rem;
+}
+
+/* Bullet lists – slightly tighter for “terminal” feel */
+ul {
+  margin-top: 0.4rem;
+  margin-bottom: 0.8rem;
+}
+
+/* Make top title look like a “banner” */
+h1:first-of-type {
+  font-family: "SF Mono", "JetBrains Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 1.9rem;
+}
+
+/* Make section headings stand out */
+h2 {
+  margin-top: 2.5rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.4);
+}
+
+/* Small tags you can use later if you want badges */
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border: 1px solid rgba(148, 163, 184, 0.7);
+  color: #a5b4fc;
+  margin-right: 4px;
+  margin-bottom: 4px;
+}
