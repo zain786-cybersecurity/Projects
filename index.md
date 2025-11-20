@@ -5,6 +5,13 @@ title: "Home"
 
 # 👋 Hi, I'm Zain Shabaan
 
+## 📫 Contact
+
+- **GitHub:** [@zains786](https://github.com/zain786-cybersecurity/Projects) <!-- change if needed -->
+- **LinkedIn:** * <a href="http://www.linkedin.com/in/zains786"> 
+- **Email:** *(zainshabaan@outlook.com)*
+
+
 **Aspiring Cybersecurity Professional** focused on:
 
 - Python security tools (encryption, phishing detection, network scanning)
@@ -315,11 +322,5 @@ By combining **simulation + design + education**, this project mirrors how real 
 - I’m actively growing towards roles like **SOC Analyst**, **Blue Team**, or **Junior Security Engineer**.
 
 ---
-
-## 📫 Contact
-
-- **GitHub:** [@zains786](https://github.com/zain786-cybersecurity/Projects) <!-- change if needed -->
-- **LinkedIn:** *(http://www.linkedin.com/in/zains786)*  
-- **Email:** *(zainshabaan@outlook.com)*
 
 If you’d like to talk about junior cybersecurity roles, projects, or collaborations, I’m always happy to connect.
