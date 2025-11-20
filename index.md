@@ -9,7 +9,7 @@ title: "Home"
 
 - **GitHub:** [@zains786](https://github.com/zain786-cybersecurity/Projects)
 - **LinkedIn:** **[zains786](https://www.linkedin.com/in/zains786)**
-- **Email:** *(zainshabaan@outlook.com)*
+- **Email:** *(zainshabaan@outlook.com)(mailto:zainshabaan@outlook.com)**
 
 
 **Aspiring Cybersecurity Professional** focused on:
