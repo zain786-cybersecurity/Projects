@@ -23,6 +23,17 @@ I learn by **doing** – building tools, running experiments in isolated labs, a
 
 ---
 
+## 📚 How I Work & Learn
+
+- I design labs that are **safe, isolated, and repeatable**.
+- I write detailed LinkedIn posts to explain:
+  - What I built
+  - Why it matters
+  - What I learned / would improve next time
+- I’m actively growing towards roles like **SOC Analyst**, **Blue Team**, or **Junior Security Engineer**.
+
+---
+
 ## 🔍 Quick Overview
 
 - [Secure Password Manager (Python)](#secure-password-manager-python)
@@ -310,17 +321,6 @@ By combining **simulation + design + education**, this project mirrors how real 
 **Tech & tools**
 
 > GoPhish • Presentation tools (interactive slides) • Poster design tools
-
----
-
-## 📚 How I Work & Learn
-
-- I design labs that are **safe, isolated, and repeatable**.
-- I write detailed LinkedIn posts to explain:
-  - What I built
-  - Why it matters
-  - What I learned / would improve next time
-- I’m actively growing towards roles like **SOC Analyst**, **Blue Team**, or **Junior Security Engineer**.
 
 ---
 
