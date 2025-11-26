@@ -356,6 +356,7 @@ By combining **simulation + design + education**, this project mirrors how real 
 ![Wireshark TCP stream – full HTTP conversation](assets/images/wireshark-tcp-stream.jpg)
 ![Wireshark DNS analysis – queries and responses](assets/images/wireshark-dns.jpg)
 
+
 **Tech & tools**
 
 > Kali Linux • Wireshark • VirtualBox • Basic networking (TCP/IP, HTTP, DNS)
