@@ -325,4 +325,41 @@ By combining **simulation + design + education**, this project mirrors how real 
 
 ---
 
+---
+
+## Wireshark Network Traffic Analysis (Kali Linux)
+
+**Goal:** Use Wireshark in a Kali Linux virtual machine to capture and analyse real network traffic, focusing on HTTP, TCP streams and DNS lookups – building a stronger foundation in networking for cybersecurity.
+
+**What I did**
+
+- Ran Kali Linux in VirtualBox and captured live traffic on the active interface (`eth0`).
+- Applied Wireshark display filters:
+  - `http` – to inspect HTTP GET requests and `200 OK` responses.
+  - `tcp` + **Follow ➝ TCP Stream** – to reconstruct full client–server conversations.
+  - `dns` – to observe how domain names are resolved before web traffic is sent.
+- Saved and documented three key views for analysis:
+  - Raw HTTP request/response packets.
+  - A full TCP stream showing the complete HTTP conversation.
+  - DNS queries and responses for visited domains.
+
+**What I learned**
+
+- How browsers request pages using HTTP and how servers respond at the packet level.
+- How multiple packets (with sequence and acknowledgement numbers) form a single TCP conversation.
+- That DNS is the first step in most web traffic – resolving names like `example.com` to IP addresses.
+- Why packet-level visibility is essential for incident response, troubleshooting and threat hunting.
+
+**Screenshots**
+
+![Wireshark HTTP capture – GET and 200 OK](assets/images/wireshark-http.jpg)
+![Wireshark TCP stream – full HTTP conversation](assets/images/wireshark-tcp-stream.jpg)
+![Wireshark DNS analysis – queries and responses](assets/images/wireshark-dns.jpg)
+
+**Tech & tools**
+
+> Kali Linux • Wireshark • VirtualBox • Basic networking (TCP/IP, HTTP, DNS)
+
+---
+
 If you’d like to talk about junior cybersecurity roles, projects, or collaborations, I’m always happy to connect.
