@@ -24,7 +24,7 @@ I learn by **doing** – building tools, running experiments in isolated labs, a
 
 ---
 
-## 📚 How I Work & Learn
+##  How I Work & Learn
 
 - I design labs that are **safe, isolated, and repeatable**.
 - I write detailed LinkedIn posts to explain:
@@ -35,7 +35,7 @@ I learn by **doing** – building tools, running experiments in isolated labs, a
 
 ---
 
-## 🔍 Quick Overview
+##  Quick Overview
 
 - [Secure Password Manager (Python)](#secure-password-manager-python)
 - [Phishing Email Detector (Python)](#phishing-email-detector-python)
@@ -45,10 +45,11 @@ I learn by **doing** – building tools, running experiments in isolated labs, a
 - [T-Pot Honeypot on DigitalOcean](#t-pot-honeypot-on-digitalocean)
 - [GoPhish Phishing Simulation](#gophish-phishing-simulation)
 - [Complete Phishing Awareness System](#complete-phishing-awareness-system)
+- [Wireshark Network Traffic Analysis (Kali Linux)](#wireshark-network-traffic-analysis-kali-linux)
 
 ---
 
-## 🧰 Technical Skills
+##  Technical Skills
 
 **Security & Platforms**
 
@@ -73,7 +74,7 @@ I learn by **doing** – building tools, running experiments in isolated labs, a
 
 ---
 
-## 🛡️ PROJECTS – Security Tools
+##  PROJECTS – Security Tools
 
 ### Secure Password Manager (Python)
 
