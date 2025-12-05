@@ -361,7 +361,7 @@ By combining **simulation + design + education**, this project mirrors how real 
 
 > Kali Linux • Wireshark • VirtualBox • Basic networking (TCP/IP, HTTP, DNS)
 
----
+
 
 ##  PROJECTS – DevOps & Automation
 
@@ -371,7 +371,7 @@ By combining **simulation + design + education**, this project mirrors how real 
 **Goal:**  
 Create a fully automated **Continuous Integration (CI)** pipeline using GitHub Actions to test and validate a Python application on every push or pull request.
 
----
+
 
 **What it does**  
 - Automatically triggers on commits to the `main` branch  
@@ -382,12 +382,12 @@ Create a fully automated **Continuous Integration (CI)** pipeline using GitHub A
 - Shows pass/fail results directly in the "Actions" tab  
 - Ensures consistent quality and prevents broken code from being merged
 
----
+
 
 **Why this matters**  
 This pipeline mimics real DevOps workflows used in production teams, enforcing code quality, reliability, and automated testing. It demonstrates core CI/CD skills required for DevOps & DevSecOps roles.
 
----
+
 
 **Tech Stack / Tools Used**  
 > GitHub Actions • CI/CD • Python 3.10 • PyTest • YAML Workflows • Ubuntu Runner • Requirements Management
