@@ -364,4 +364,39 @@ By combining **simulation + design + education**, this project mirrors how real 
 
 ---
 
+##  PROJECTS – DevOps & Automation
+
+### Project 1
+###  CI Pipeline for Python Application
+<div class="project-block">
+
+**Goal:**  
+Create a fully automated **Continuous Integration (CI)** pipeline using GitHub Actions to test and validate a Python application on every push or pull request.
+
+**What it does**  
+- Automatically triggers on commits to the `main` branch  
+- Checks out the repository code  
+- Sets up Python 3.10 in the CI runner  
+- Installs dependencies from `requirements.txt`  
+- Runs automated tests using `pytest`  
+- Shows pass/fail results directly in the "Actions" tab  
+- Ensures consistent quality and prevents broken code from being merged  
+
+**Why this matters**  
+This pipeline mimics real DevOps workflows used in production teams, enforcing code quality, reliability, and automated testing. It demonstrates core CI/CD skills required for DevOps & DevSecOps roles.
+
+**Tech Stack / Tools Used**  
+> GitHub Actions • CI/CD • Python 3.10 • PyTest • YAML Workflows • Ubuntu Runner • Requirements Management
+
+**Screenshots**
+
+![Screenshot 1](assets/images/devops-ci-1.png)
+![Screenshot 2](assets/images/devops-ci-2.png)
+![Screenshot 3](assets/images/devops-ci-3.png)
+
+
+
+</div>
+
+
 If you’d like to talk about junior cybersecurity roles, projects, or collaborations, I’m always happy to connect.
