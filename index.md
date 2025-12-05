@@ -394,6 +394,7 @@ This pipeline mimics real DevOps workflows used in production teams, enforcing c
 ![Wireshark TCP stream – full HTTP conversation](assets/images/devops-ci-2.png)
 ![Wireshark DNS analysis – queries and responses](assets/images/devops-ci-3.png)
 
+
 ---
 
 
