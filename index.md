@@ -390,9 +390,20 @@ This pipeline mimics real DevOps workflows used in production teams, enforcing c
 
 **Screenshots**
 
-![Wireshark HTTP capture – GET and 200 OK](assets/images/devops-ci-1.png)
-![Wireshark TCP stream – full HTTP conversation](assets/images/devops-ci-2.png)
-![Wireshark DNS analysis – queries and responses](assets/images/devops-ci-3.png)
+<p>
+  <img src="/Projects/assets/images/devops-ci-1.png"
+       alt="Wireshark HTTP capture – GET and 200 OK"
+       style="max-width: 100%; border-radius: 12px; margin-bottom: 0.75rem;" />
+
+  <img src="/Projects/assets/images/devops-ci-2.png"
+       alt="Wireshark TCP stream – full HTTP conversation"
+       style="max-width: 100%; border-radius: 12px; margin-bottom: 0.75rem;" />
+
+  <img src="/Projects/assets/images/devops-ci-3.png"
+       alt="Wireshark DNS analysis – queries and responses"
+       style="max-width: 100%; border-radius: 12px; margin-bottom: 0.75rem;" />
+</p>
+
 
 
 ---
