@@ -366,7 +366,6 @@ By combining **simulation + design + education**, this project mirrors how real 
 
 ##  PROJECTS – DevOps & Automation
 
-### Project 1
 ###  CI Pipeline for Python Application
 <div class="project-block">
 
